@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+
+<head>
+  <title> Project </title>
+</head>
+
+<body background="grey.jpg">
+  <br>
+  <table width=100% border="6">
+    <td background="coie.jpg" width=20%>
+      <p align=center><a href="music4.html" target="_self"> <b>
+            <font size="4" color="#ffffff"> Underground Folclor</font>
+          </b></a></p>
+    </td>
+    <td background="techno.jpg" width=20%>
+      <p align=center><a href="music1.html" target="_self"> <b>
+            <font size="4">
+              <font color="#ffffff"> Techno </font>
+          </b></a></p>
+    </td>
+    <td background="drums.jpg" width=20%>
+      <p align=center><a href="music5.html" target="_self">
+          <font color="#ffffff"> <b>
+              <font size="4"> Drum and Bass </font>
+            </b>
+        </a></p>
+      </font>
+      <FORM align=center METHOD="LINK" ACTION="musicMain.html">
+        <INPUT TYPE="submit" font size="4" VALUE="HOME">
+      </FORM>
+      <br>
+    </td>
+    <td background="electronic.jpg" width=20%>
+      <p align=center><a href="music3.html" target="_self"> <b>
+            <font color="#ffffff" size="4"> Electronic</font>
+          </b></a></p>
+      </font>
+    </td>
+    <td background="hiphop.jpg" width=20%>
+      <p align=center><a href="music2.html" target="_self"> <b>
+            <font size="4">
+              <font color=#ffffff> Underground HipHop</font>
+          </b></a></p>
+      </font>
+    </td>
+  </table>
+  <br>
+  <table style="float:right;" width=30% border="3" cellspacing="5" cellpadding="12">
+    <td width=30%>
+      <script type="text/javascript">
+        var x = 0;
+
+        function rotate(num) {
+          fs = document.ff.slide;
+          x = num % fs.length;
+          if (x < 0) x = fs.length - 1;
+          document.images.show.src = fs.options[x].value;
+          fs.selectedIndex = x;
+        }
+
+        function auto() {
+          if (document.ff.fa.value == "Stop") {
+            rotate(++x); setTimeout("auto()", 3000);
+          }
+        }
+      </script>
+      <form name="ff">
+        <table cellpadding="3" align=center style="border:none;">
+          <tr>
+            <th align="center">
+              <font size="5">Different Music Albums Slideshow</font>
+            </th>
+          </tr>
+          <tr>
+            <td border=none align="center">
+              <img width="450" src="http://blacksheepsound.ro/wp-content/uploads/2015/10/Chimie.jpg" name="show">
+            </td>
+          </tr>
+          <tr>
+            <td align="center" style="border:none;">
+              <select name="slide" onChange="rotate(this.selectedIndex);">
+                <option value="http://blacksheepsound.ro/wp-content/uploads/2015/10/Chimie.jpg">Chimie</option>
+                <option value="http://www.hiphoplive.ro/wp-content/uploads/2015/07/roman-turnul-de-veghe-1024x592.jpg">
+                  romaNecredinciosu</option>
+                <option value="https://f1.bcbits.com/img/a4134953684_10.jpg">AFO</option>
+                <option value="http://paulkalkbrenner.net/wp-content/uploads/2015/06/PK-7.jpg">Paul K</option>
+                <option
+                  value="http://thevandallist.com/wp-content/uploads/2013/11/1441326_684287751582054_325436538_n-851x288-500x400.jpg">
+                  Argatu</option>
+                <option
+                  value="http://orig12.deviantart.net/c3c2/f/2014/205/8/e/flatbush_zombies__psychedelic_wallpaper_by_switchgonewild-d7s2cjo.png">
+                  Flatbush Zombies</option>
+                <option value="http://phoenixhiphop.ro/wp-content/uploads/2014/11/11112.png">Kazi Ploae</option>
+                <option value="http://1music.ro/wp-content/uploads/2012/05/subcarpati.jpg">Subcarpati</option>
+                <option value="https://i.ytimg.com/vi/b1zO5EMmuBA/maxresdefault.jpg">C2C(Coups2Cross)</option>
+                <option value="https://upload.wikimedia.org/wikipedia/en/c/c6/No_More_Idols.jpg">Chase and Status
+                </option>
+              </select>
+            </td>
+          </tr>
+          <tr>
+            <td align="center" style="border:none;">
+              <input type="button" onclick="rotate(x-1);" value="&lt;&lt;" title="Last Picture" />
+              <input type="button" name="fa" onClick="this.value=((this.value=='Stop')?'Start':'Stop');auto();"
+                value="Start" title="Autoplay" style="width:75px;" />
+              <input type="button" onclick="rotate(x+1);" value="&gt;&gt;" title="Next Picture" />
+            </td>
+          </tr>
+        </table>
+      </form>
+    </td>
+  </table>
+  <table align=center width=50% border="5" cellspacing="7" cellpadding="5">
+    <tr>
+      <td align=center>
+        <font size="5">Music History </font>
+        <p align=center>
+          <font size="4">Music history, sometimes called historical musicology, is the highly diverse subfield of the
+            broader discipline of musicology that studies music from a historical viewpoint.
+            In theory, "music history" could refer to the study of the history of any type or genre of music (e.g., the
+            history of Indian music or the history of rock).
+            The terms "music history" and "historical musicology" usually refer to the history of the notated music of
+            Western elites, sometimes called "art music" (by analogy to art history, which tends to focus on elite art).
+            The methods of music history include source studies (esp. manuscript studies), paleography, philology
+            (especially textual criticism), style criticism, historiography (the choice of historical method), musical
+            analysis, and iconography.
+            The application of musical analysis to further these goals is often a part of music history, though pure
+            analysis or the development of new tools of music analysis is more likely to be seen in the field of music
+            theory.
+            Some of the intellectual products of music historians include editions of musical works, biography of
+            composers and other musicians, studies of the relationship between words and music, and the reflections upon
+            the place of music in society.
+        </p>
+        </font>
+      </td>
+    </tr>
+    <tr>
+      <td align=center>
+        <font size="5">About Music Genres </font>
+        <p align=center>
+          <font size="4">Music can be divided into different genres in many different ways.
+            The artistic nature of music means that these classifications are often subjective and controversial, and
+            some genres may overlap.
+            There are even varying academic definitions of the term genre itself. In his book Form in Tonal Music,
+            Douglass M. Green distinguishes between genre and form.
+            He lists madrigal, motet, canzona, ricercar, and dance as examples of genres from the Renaissance period.
+    </tr>
+    </td>
+  </table>
+</body>
+
+</html>
